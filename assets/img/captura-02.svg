@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="900" fill="#fafafa"/>
+  <rect x="0" y="0" width="1600" height="60" fill="#0a0a0a"/>
+  <text x="40" y="40" fill="#fff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">Alertas IHCA · Dashboard</text>
+  <text x="800" y="450" text-anchor="middle" fill="#0a0a0a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="120" font-weight="700">02</text>
+  <text x="800" y="520" text-anchor="middle" fill="#6b6b6b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">Placeholder · sustituir por captura real</text>
+  <rect x="60" y="100" width="1480" height="780" fill="none" stroke="#e5e5e5" stroke-width="2"/>
+</svg>

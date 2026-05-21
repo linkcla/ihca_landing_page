@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alertas IHCA · HUSLL</title>
+    <meta name="description" content="Sistema de detección precoz de parada cardíaca intrahospitalaria — Hospital Universitario Son Llàtzer" data-i18n-attr="content" data-i18n="meta.description" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-name">Alertas IHCA</span>
+          <span class="brand-sub" data-i18n="brand.sub">HUSLL · 2025-2026</span>
+        </a>
+        <nav class="site-nav" aria-label="Secciones">
+          <a href="#trabajo" data-i18n="nav.work">Trabajo</a>
+          <a href="#prototipo" data-i18n="nav.prototype">Prototipo</a>
+          <a href="#capturas" data-i18n="nav.screens">Capturas</a>
+          <a href="#demo" data-i18n="nav.demo">Demo</a>
+          <a href="#colaboraciones" data-i18n="nav.collab">Colaboraciones</a>
+        </nav>
+        <div class="lang-toggle" role="group" aria-label="Idioma">
+          <button type="button" data-lang="es" class="lang-btn is-active">ES</button>
+          <span aria-hidden="true">·</span>
+          <button type="button" data-lang="en" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="hero">
+        <div class="container">
+          <p class="eyebrow" data-i18n="hero.eyebrow">UIB · HUSLL · Servicio de Informática · 2025-2026</p>
+          <h1 class="hero-title">Alertas IHCA</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Detección precoz de parada cardíaca intrahospitalaria mediante un motor clínico multicapa sobre la historia electrónica del HUSLL.
+          </p>
+          <p class="hero-meta">
+            <span data-i18n="hero.status">Estado:</span>
+            <strong data-i18n="hero.statusValue">prototipo en validación clínica</strong>
+          </p>
+          <div class="hero-ctas">
+            <a class="btn" href="#demo" data-i18n="hero.ctaDemo">Ver demo ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01 TRABAJO -->
+      <section id="trabajo" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-num">01</span>
+            <h2 class="section-title" data-i18n="work.title">Trabajo</h2>
+            <p class="section-lede" data-i18n="work.lede">
+              Tres ejes de contribución del proyecto.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <article class="card">
+              <h3 data-i18n="work.a.title">DETECCIÓN PRECOZ</h3>
+              <p data-i18n="work.a.body">Asignación de un nivel de alerta N0–N4 por paciente ingresado, revisado en cada ciclo de evaluación.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="work.b.title">MOTOR CLÍNICO MULTICAPA</h3>
+              <p data-i18n="work.b.body">Scores fisiológicos (NEWS2, CART, MEWS, qSOFA), laboratorio, gasometría, microbiología, balance y NLP local.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="work.c.title">INTEGRACIÓN HIS</h3>
+              <p data-i18n="work.c.body">Lectura de Oracle SISN2 (solo lectura) + caché MySQL para consultas instantáneas. Dashboard Vue 3 para UCI, planta y urgencias.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 PROTOTIPO -->
+      <section id="prototipo" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-num">02</span>
+            <h2 class="section-title" data-i18n="proto.title">Prototipo</h2>
+            <p class="section-lede" data-i18n="proto.lede">
+              Ocho módulos clínicos componen el motor de evaluación.
+            </p>
+          </header>
+          <div class="grid grid-4 modules">
+            <article class="module">
+              <span class="module-id">M1</span>
+              <h3 data-i18n="proto.m1.title">NEWS2</h3>
+              <p data-i18n="proto.m1.body">Score de alerta temprana sobre constantes vitales.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M2</span>
+              <h3 data-i18n="proto.m2.title">CART</h3>
+              <p data-i18n="proto.m2.body">Cardiac Arrest Risk Triage adaptado al contexto del hospital.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M3</span>
+              <h3 data-i18n="proto.m3.title">MEWS · qSOFA</h3>
+              <p data-i18n="proto.m3.body">Scores complementarios de deterioro y sospecha de sepsis.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M4</span>
+              <h3 data-i18n="proto.m4.title">Laboratorio</h3>
+              <p data-i18n="proto.m4.body">Tendencias multiventana de analíticas clave.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M5</span>
+              <h3 data-i18n="proto.m5.title">Gasometría</h3>
+              <p data-i18n="proto.m5.body">Seguimiento de pH, lactato y bicarbonato con tendencias.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M6</span>
+              <h3 data-i18n="proto.m6.title">Microbiología · Balance</h3>
+              <p data-i18n="proto.m6.body">Cultivos positivos y balance hídrico estimado por paciente.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M7</span>
+              <h3 data-i18n="proto.m7.title">CONCERN · Enfermería</h3>
+              <p data-i18n="proto.m7.body">CONCERN cuantitativo y escalas de enfermería integradas.</p>
+            </article>
+            <article class="module">
+              <span class="module-id">M8</span>
+              <h3 data-i18n="proto.m8.title">NLP local</h3>
+              <p data-i18n="proto.m8.body">Regex + diccionarios on-premise. Sin LLM en la nube. Cumple ENS.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 CAPTURAS -->
+      <section id="capturas" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-num">03</span>
+            <h2 class="section-title" data-i18n="caps.title">Capturas</h2>
+            <p class="section-lede" data-i18n="caps.lede">
+              Pantallas del dashboard y de la vista de paciente.
+            </p>
+          </header>
+
+          <div class="carousel" id="carousel" tabindex="0" aria-roledescription="carousel">
+            <div class="carousel-viewport">
+              <ul class="carousel-track">
+                <li class="carousel-slide"><img src="assets/img/captura-01.svg" alt="Captura 1" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-02.svg" alt="Captura 2" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-03.svg" alt="Captura 3" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-04.svg" alt="Captura 4" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-05.svg" alt="Captura 5" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-06.svg" alt="Captura 6" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-07.svg" alt="Captura 7" loading="lazy" /></li>
+                <li class="carousel-slide"><img src="assets/img/captura-08.svg" alt="Captura 8" loading="lazy" /></li>
+              </ul>
+            </div>
+            <div class="carousel-controls">
+              <button type="button" class="carousel-btn" data-dir="prev" aria-label="Anterior">←</button>
+              <span class="carousel-counter" aria-live="polite">01 / 08</span>
+              <button type="button" class="carousel-btn" data-dir="next" aria-label="Siguiente">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 DEMO -->
+      <section id="demo" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-num">04</span>
+            <h2 class="section-title" data-i18n="demo.title">Demo</h2>
+            <p class="section-lede" data-i18n="demo.lede">
+              Vídeo de una sesión de evaluación sobre datos reales anonimizados.
+            </p>
+          </header>
+          <figure class="video-wrap">
+            <video controls preload="metadata">
+              <source src="assets/video/demo_compressed.mp4" type="video/mp4" />
+              <p data-i18n="demo.fallback">Tu navegador no soporta el vídeo HTML5. Puedes descargarlo abajo.</p>
+            </video>
+            <figcaption class="video-meta">
+              <span data-i18n="demo.caption">Demo · navegación por el dashboard, alertas y detalle de paciente.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 05 COLABORACIONES -->
+      <section id="colaboraciones" class="section">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-num">05</span>
+            <h2 class="section-title" data-i18n="collab.title">Colaboraciones</h2>
+            <p class="section-lede" data-i18n="collab.lede">
+              Equipo clínico, técnico y académico del proyecto.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <article class="card">
+              <span class="roman">i</span>
+              <h3 data-i18n="collab.a.title">Clínico</h3>
+              <p data-i18n="collab.a.body">Servicio de UCI y Enfermería del HUSLL. Validación de niveles y criterios.</p>
+            </article>
+            <article class="card">
+              <span class="roman">ii</span>
+              <h3 data-i18n="collab.b.title">Técnico</h3>
+              <p data-i18n="collab.b.body">Servicio de Informática del HUSLL. Integración Oracle, arquitectura y despliegue.</p>
+            </article>
+            <article class="card">
+              <span class="roman">iii</span>
+              <h3 data-i18n="collab.c.title">Académico</h3>
+              <p data-i18n="collab.c.body">Universitat de les Illes Balears. Dirección académica y supervisión metodológica del proyecto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.org">Hospital Universitario Son Llàtzer · Servicio de Informática</p>
+      </div>
+    </footer>
+
+    <!-- Modal de imagen ampliada -->
+    <div class="img-modal" id="imgModal" hidden>
+      <button type="button" class="img-modal-close" aria-label="Cerrar">×</button>
+      <img alt="" />
+    </div>
+
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/carousel.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
