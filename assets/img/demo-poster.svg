@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
-  <rect width="1280" height="720" fill="#0a0a0a"/>
-  <g fill="#fff" font-family="ui-sans-serif, system-ui, sans-serif">
-    <text x="640" y="350" text-anchor="middle" font-size="48" font-weight="700">Alertas IHCA · Demo</text>
-    <text x="640" y="400" text-anchor="middle" font-size="22" opacity="0.7">Reemplaza assets/video/demo.mp4 con la grabación real</text>
-  </g>
-  <polygon points="600,460 720,520 600,580" fill="#fff"/>
-</svg>
